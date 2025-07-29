@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Components Showcase</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ======================= 1. NAVBAR ======================= -->
+    <!-- This navbar collapses into a hamburger menu on medium screens (navbar-expand-lg) -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Component Showcase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <a href="index.html" class="btn btn-link">← Back to Home</a>
+        <h1 class="text-center my-4">A Proper Bootstrap Components Example</h1>
+        <p class="text-center text-muted">A tour of the most common UI elements you can build.</p>
+
+        <hr>
+
+        <!-- ======================= 2. HERO SECTION ======================= -->
+        <h3 class="mt-5">Hero Section with Buttons</h3>
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Welcome to the Showcase</h1>
+                <p class="col-md-8 fs-4">This is a "hero" section. It's great for introductions and calls to action. It uses padding and background utilities.</p>
+                <button class="btn btn-primary btn-lg" type="button">Primary Action</button>
+                <button class="btn btn-secondary btn-lg" type="button">Secondary Action</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ======================= 3. CARDS ======================= -->
+        <h3 class="mt-5">Cards</h3>
+        <p>Cards are flexible containers for content. Here they are arranged in a row using the grid system.</p>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Placeholder image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Placeholder image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 2</h5>
+                        <p class="card-text">Another example of card text to show how they can contain different information and still align.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Placeholder image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 3</h5>
+                        <p class="card-text">This card has slightly less text but maintains the same overall structure as the others in the row.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ======================= 4. MODAL & ACCORDION ======================= -->
+        <h3 class="mt-5">Interactive Components (Modal & Accordion)</h3>
+        <p>These components require Bootstrap's JavaScript file to work. They allow for interactive elements like pop-ups and collapsible sections.</p>
+        <div class="row">
+            <!-- Modal Trigger -->
+            <div class="col-md-6">
+                <h4>Modal Example</h4>
+                <p>Click the button to launch a pop-up window.</p>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch Demo Modal
+                </button>
+            </div>
+            <!-- Accordion -->
+            <div class="col-md-6">
+                <h4>Accordion FAQ</h4>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Question #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Question #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                This is the second item's accordion body. It is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ======================= 5. FOOTER ======================= -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">
+            <p class="mb-0">© 2024 Component Showcase. All Rights Reserved.</p>
+            <p>A simple footer example for your page.</p>
+        </div>
+    </footer>
+
+    <!-- Modal HTML (usually placed at the end of the body) -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is a modal pop-up! You can put forms, information, or anything else in here.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Required for interactive components like the navbar, modal, and accordion) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
